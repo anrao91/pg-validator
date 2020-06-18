@@ -348,6 +348,9 @@ input {
   border-radius: 3px;
   border: 1px solid #dcdcdc;
 }
+input[pattern]:invalid {
+  color: red;
+}
 
 input:hover,
 input:focus {
@@ -355,7 +358,7 @@ input:focus {
   border-color: #2f70ff;
 }
 
-button[type="submit"] {
+button {
   line-height: 1.499;
   display: block;
   font-weight: 400;
@@ -378,4 +381,11 @@ button[type="submit"] {
 
 button span {
   text-align: center;
+}
+
+button:disabled {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  pointer-events: none;
 }
